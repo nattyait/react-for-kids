@@ -1,0 +1,11 @@
+FROM node:7.7
+
+ENV APPLICATION_ROOT /app/
+ADD . $APPLICATION_ROOT
+WORKDIR $APPLICATION_ROOT
+EXPOSE 8080
+
+RUN npm install
+
+CMD ["yarn", "dev"]
+

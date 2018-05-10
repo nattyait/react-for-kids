@@ -18,12 +18,12 @@
   "scripts": {
     "build": "babel -d dist src",
     "build:watch": "webpack --watch",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --host 0.0.0.0",
     "webpack": "webpack",
     "webpack:watch": "webpack --watch",
     "lint": "eslint ."
   },
-  "name": "todo",
+  "name": "react-for-kids",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
