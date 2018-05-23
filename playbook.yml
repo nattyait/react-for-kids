@@ -1,0 +1,14 @@
+# React for Kids playbook
+- name: react-for-kids
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+   - name: start docker
+     command: docker-compose up -d
+     register: out
+
+   - debug:
+       var: out
+       verbosity: 2
+  
